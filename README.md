@@ -3,6 +3,7 @@ Homework assignments for the Robotics laboratory course in the third year at the
 
 
 2nd Homework
+
 Use a separate potentiometer for controlling each color of the RGB LED: Red,
 Green, and Blue. This control must leverage digital electronics. Specifically,
 you need to read the potentiometer’s value with Arduino and then write a
