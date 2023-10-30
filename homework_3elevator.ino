@@ -1,17 +1,17 @@
-const int floorLEDPins[] = {10, 11, 12}; // Pins for floor LEDs pinurile
-const int operationalLEDPin = 13;      // Pin for operational state LED
-const int buttonPins[] = {4, 5, 6};     // Pins for call buttons
-const int buzzerPin = 3;                // Pin for the buzzer
+const int floorLEDPins[] = {10, 11, 12}; // pinurile etajelor - (rosii) 
+const int operationalLEDPin = 13;      // Pinul operational (verde)
+const int buttonPins[] = {4, 5, 6};     // Pinurile pentru call buttons
+const int buzzerPin = 3;                // pinul pentru buzzer
 
-int currentFloor = 0;   // Initialize the elevator at floor 0
-int desiredFloor = -1;  // Initialize desired floor
-bool isMoving = false;    // Elevator state (moving or stationary)
-bool isBlinking = false;  // Flag for LED blinking
-bool lastMovementStatus = false;  // Track the previous movement status
-unsigned long lastMovementChangeTime = 0;  // Track the time when the movement status last changed
+int currentFloor = 0;   // Inițializam liftul la etajul 0
+int desiredFloor = -1;  // Initializam etajul dorit
+bool isMoving = false;    // Starea liftului (stationare / miscare)
+bool isBlinking = false;  // Flag pentru ledul verde
+bool lastMovementStatus = false;  // urmarim statusul de miscare anterior
+unsigned long lastMovementChangeTime = 0;  // Urmărim timpul când starea miscarii s-a schimbat ultima data
 
 unsigned long lastBlinkTime = 0;
-const unsigned long blinkInterval = 500; // 0.5 seconds
+const unsigned long blinkInterval = 500; // 
 unsigned long moveStartTime = 0;
 const unsigned long moveDuration = 2000;
 
@@ -51,7 +51,7 @@ void initiateElevatorMovement(int destinationFloor) {
       isMoving = true;
       moveStartTime = millis();
       desiredFloor = destinationFloor;
-      stopMovingSound();  // Oprește sunetul de miscare
+      stopMovingSound(); 
       delay(500);  // Mic delay între niveluri
       if (i == 1) {
         tone(buzzerPin, 1500, 100);  // Sunet pentru trecerea prin nivelul 1
@@ -80,14 +80,14 @@ void manageElevatorMovement() {
     isMoving = false;
     stopBlinkingLED();
     updateFloorLEDs();
-    stopMovingSound(); // Oprește sunetul de miscare
-    tone(buzzerPin, 1000, 100);  // Sunet pentru sosire
+    stopMovingSound(); 
+    tone(buzzerPin, 1000, 100);  
   } else {
     if (isMoving != lastMovementStatus) {
       lastMovementStatus = isMoving;
       lastMovementChangeTime = millis();
       if (isMoving) {
-        playMovingSound();  // Sunet pentru începutul deplasării
+        playMovingSound();  
       }
     }
   }
@@ -139,7 +139,7 @@ void updateFloorLEDs() {
       }
     }
   } else {
-    // Elevator stationary, aprinde LED-ul la etajul curent sau dorit
+    // Liftul stationeaza, aprinde LED-ul la etajul curent sau dorit
     for (int i = 0; i < 3; i++) {
       digitalWrite(floorLEDPins[i], (currentFloor == i || desiredFloor == i));
     }
@@ -147,12 +147,10 @@ void updateFloorLEDs() {
 }
 
 void playMovingSound() {
-  // Sunet continuu pentru miscare
   tone(buzzerPin, 700, 1000);
 }
 
 void stopMovingSound() {
-  // Oprește sunetul de miscare
   noTone(buzzerPin);
 }
 /// am incercat in update floor led sa fac si trecerea prin nivelul 1 (led-ul din mijloc) fara succes :'(
