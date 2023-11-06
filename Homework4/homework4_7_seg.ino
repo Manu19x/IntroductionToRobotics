@@ -19,8 +19,8 @@ byte state = HIGH;
 byte swState = HIGH;
 byte lastSwState = HIGH;
 
-int xAxisValue = 0; // Renamed xValue to xAxisValue
-int yAxisValue = 0; // Renamed yValue to yAxisValue
+int xAxisValue = 0; 
+int yAxisValue = 0; 
 
 bool joyMoved = false;
 int minThreshold = 400;
