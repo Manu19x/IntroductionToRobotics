@@ -1,5 +1,5 @@
 // Declare all the joystick pins
-const int pinSW = 2; // Digital pin connected to switch output
+const int pinSW = 2; // Digital pin for joystick
 const int pinX = A0; // Analog pin connected to X output
 const int pinY = A1; // Analog pin connected to Y output
 
