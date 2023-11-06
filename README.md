@@ -52,6 +52,20 @@ unintentional repeated button presses</li>
 </details>
 
 
+<details>
+<summary> <h2>Homework 4</h2> </summary>
+<br>
+
+### Task:  - 7 segment display drawing - Start with the dot point. The current position keeps flashing no matter if the part is turned on or off. You can use the joystick to hop around to nearby positions. A quick press of the button switches the part from on to off, or from off to on. If you hold the button for a while, it clears the whole display by turning off all the parts and putting the current position back at the dot. Interruptions are needed.
+### Code: [click here](https://github.com/Manu19x/IntroductionToRobotics/blob/main/Homework4/homework4_7_seg.ino)
+### Youtube video that shows how it works: [click here](https://youtu.be/1q8kYQo0aAA?si=I4LZ1vaigVZacQml)
+![Screenshot_5](https://github.com/Manu19x/IntroductionToRobotics/assets/104021556/4d44520f-f498-4840-b825-3f26ce835bb5)
+
+
+
+</details>
+
+
 
 
 
