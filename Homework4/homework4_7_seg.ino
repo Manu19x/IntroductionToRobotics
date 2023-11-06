@@ -107,7 +107,7 @@ void loop() {
     joyMoved = false;
   }
 
-  delay(100);  // A small delay between readings to prevent multiple movements
+  delay(20);  // A small delay between readings to prevent multiple movements
 }
 
 void moveSegment(int direction) {
