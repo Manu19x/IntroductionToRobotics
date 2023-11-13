@@ -66,6 +66,33 @@ unintentional repeated button presses</li>
 </details>
 
 
+<details>
+<summary> <h2>Homework 5</h2> </summary>
+<br>
+
+### Task:  - 4x 7 segment display stopwatch - Requirements:
+
+The 4-digit 7-segment display should start with "000.0".
+Buttons do the following:
+Button 1: Starts or pauses the timer.
+Button 2: Resets (if paused) or resets saved laps (if viewing laps).
+Button 3: Saves a lap (when counting), cycles through the last 4 saved laps.
+How it works:
+
+The display starts with "000.0". Pressing Start begins the timer.
+During the timer, pressing Lap saves that time, up to 4 laps. The 5th press overwrites the 1st. Reset does nothing during the timer, and Pause stops the timer.
+In Pause mode, Lap doesn't work. Pressing Reset resets the timer to "000.0".
+After reset, press Lap to cycle through saved laps. Continuous pressing cycles through laps. Reset in this state clears all flags and resets the timer to "000.0".
+### Code: [click here](https://github.com/Manu19x/IntroductionToRobotics/tree/main/homework5)
+### Youtube video that shows how it works: [click here](https://youtu.be/eQzjr2Uz1xY?si=lWtQG_9xk1qdMVWs)
+![7687f603-be5d-4a21-a94f-c15229d5fd4e](https://github.com/Manu19x/IntroductionToRobotics/assets/104021556/043b106a-eda0-4e15-836f-7cc701498288)
+
+
+
+
+</details>
+
+
 
 
 
