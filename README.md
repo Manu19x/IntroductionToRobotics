@@ -87,7 +87,39 @@ After reset, press Lap to cycle through saved laps. Continuous pressing cycles t
 ### Youtube video that shows how it works: [click here](https://youtu.be/eQzjr2Uz1xY?si=lWtQG_9xk1qdMVWs)
 ![7687f603-be5d-4a21-a94f-c15229d5fd4e](https://github.com/Manu19x/IntroductionToRobotics/assets/104021556/043b106a-eda0-4e15-836f-7cc701498288)
 
+</details>
 
+<details>
+<summary> <h2>Homework 6</h2> </summary>
+<br>
+
+### Task:  - Pseudo-smart Environment Monitor and Logger - Requirements:
+
+The Smart Environment Monitor and Logger is a comprehensive system built around an Arduino microcontroller designed to collect and record diverse environmental data. Equipped with various sensors, this system captures information vital to understanding environmental conditions.
+
+How It Works: Menu Structure
+1. Sensor Settings
+1.1 Sensors Sampling Interval: User input for the sensor sampling rate (between 1 and 10 seconds).
+1.2 Ultrasonic Alert Threshold: Set threshold value for the ultrasonic sensor to trigger alerts.
+1.3 LDR Alert Threshold: Set threshold value for the LDR sensor to trigger alerts.
+1.4 Back: Return to the main menu.
+2. Reset Logger Data
+2.1 Yes: Confirm to delete all data.
+2.2 No: Cancel data reset.
+3. System Status
+3.1 Current Sensor Readings: Continuous display of sensor readings at the set sampling rate; includes an exit option.
+3.2 Current Sensor Settings: Displays sampling rate and threshold values for all sensors.
+3.3 Display Logged Data: Displays the last 10 sensor readings for all sensors.
+3.4 Back: Return to the main menu.
+4. RGB LED Control
+4.1 Manual Color Control: Set RGB LED colors manually.
+4.2 LED: Toggle Automatic ON/OFF: Automatic mode: LED is GREEN if no sensor exceeds threshold; otherwise, RED. Manual mode uses last saved RGB values.
+4.3 Back: Return to the main menu.
+
+
+### Code: [click here](https://github.com/Manu19x/IntroductionToRobotics/blob/main/Homework6/environmentmonitor/environmentmonitor.ino)
+### Youtube video that shows how it works: [click here](https://youtu.be/WZWiCGBvInU?si=FYIGRsdd3OByDrMv)
+![5da47eb5-59ba-422e-a379-f8e8026a1069](https://github.com/Manu19x/IntroductionToRobotics/assets/104021556/02563942-e0f7-4ea1-9a76-597e5d05680d)
 
 
 </details>
