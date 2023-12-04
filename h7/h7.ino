@@ -51,6 +51,36 @@ byte bombYPos;
 
 
 
+void setup() {
+  Serial.begin(9600);
+  lc.shutdown(0, false); 
+  lc.setIntensity(0, matrixBrightness); 
+  lc.clearDisplay(0); 
+  matrix[xPos][yPos] = 1; 
+generateWalls();
+generatePlayerPosition();
+
+}
+
+
+void loop() {
+  if (millis() - lastMoved > moveInterval) {
+    updatePositions();
+    lastMoved = millis();
+  }
+
+  
+  if (millis() - lastPlayerBlink > playerBlinkInterval) {
+    playerVisible = !playerVisible; 
+    matrix[xPos][yPos] = playerVisible ? 1 : 0; 
+
+    updateMatrix();
+
+    lastPlayerBlink = millis();
+  }
+}
+
+
 void generateWalls() {
   int wallCount = 0;
 
@@ -85,34 +115,6 @@ void generatePlayerPosition() {
   }
 }
 
-void setup() {
-  Serial.begin(9600);
-  lc.shutdown(0, false); 
-  lc.setIntensity(0, matrixBrightness); 
-  lc.clearDisplay(0); 
-  matrix[xPos][yPos] = 1; 
-generateWalls();
-generatePlayerPosition();
-
-}
-
-
-void loop() {
-  if (millis() - lastMoved > moveInterval) {
-    updatePositions();
-    lastMoved = millis();
-  }
-
-  
-  if (millis() - lastPlayerBlink > playerBlinkInterval) {
-    playerVisible = !playerVisible; 
-    matrix[xPos][yPos] = playerVisible ? 1 : 0; 
-
-    updateMatrix();
-
-    lastPlayerBlink = millis();
-  }
-}
 
 void updateMatrix() {
   for (int row = 0; row < matrixSize; row++) {
