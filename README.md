@@ -131,7 +131,7 @@ How It Works: Menu Structure
 ### Task:  - Pseudo Bomberman game
 ### How it works: The games start by generating the map and the player, as the game goes on you cand move around where there is no wall and you can destroy the walls by placing bombs.
 
-
+### Youtube video that shows how it works: [click here](https://youtu.be/d4nvDhrWsQA)
 ### Code: [click here](https://github.com/Manu19x/IntroductionToRobotics/blob/main/h7/h7.ino)
 
 ![h7](https://github.com/Manu19x/IntroductionToRobotics/assets/104021556/dd8a5efa-98af-4be5-83ba-2ffca001b749)
