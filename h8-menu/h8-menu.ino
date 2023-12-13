@@ -96,9 +96,9 @@ void setup() {
 
   pinMode(joySW, INPUT_PULLUP);
 
-  showIntroMessage("PRESS JSW."); // Afiseaza mesajul introductiv cu un text la alegere
+  showIntroMessage("PRESS JSW."); 
 
-  // Setează starea inițială a meniului după ce a fost afișat mesajul introductiv
+  
   menuState = START_GAME;
 }
 
@@ -120,7 +120,7 @@ void loop() {
         lcd.setCursor(14, 0);
         lcd.write(byte(3));
         centerTextOnLcd("JS button=enter", 1);
-        //centerTextOnLcd(String("Your HighScore:") + String(highscore), 1);
+        
         break;
 
     case SETTINGS:
