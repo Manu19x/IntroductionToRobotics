@@ -139,6 +139,27 @@ How It Works: Menu Structure
 
 </details>
 
+<details>
+<summary> <h2>Homework 8</h2> </summary>
+<br>
+
+### Task:  - Matrix Game Menu
+### Description: LCD integrated menu for a matrix game with multiple functionalities :
+   ### - Start Game - starts the game
+   ### - High Score - (to be done) Keeps the best score on the game
+   ### - Settings - (to be done ) Provides lcd&matrix brightness control  
+   ### - About - Shows the creator of the  game
+   
+### Youtube video that shows how it works: [click here](https://youtube.com/shorts/DSqgH2-j9J8?si=hFkos5buR034xbAp)
+### Code: [click here](https://github.com/Manu19x/IntroductionToRobotics/blob/main/h8-menu/h8-menu.ino)
+
+![meniu](https://github.com/Manu19x/IntroductionToRobotics/assets/104021556/99770ebc-495a-44ec-9665-87387ad724ea)
+
+)
+
+
+</details>
+
 
 
 
